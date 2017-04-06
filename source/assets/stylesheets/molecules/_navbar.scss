@@ -1,0 +1,25 @@
+.navbar {
+  background-color: $black;
+  .brand-title {
+    span {
+      opacity: 0.4;
+    }
+  }
+
+
+  .navbar-search {
+    padding: 1rem;
+  }
+  a {
+    font-family: $header-font-family;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    text-decoration: none;
+    color: $white;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

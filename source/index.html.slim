@@ -6,11 +6,20 @@ twitter_card_img: ''
 
 .row
   .small-12.columns
-    h1 = data.settings.site.title
-    p = data.settings.site.description
+    section.section
+      h1 = data.settings.site.title
+      p = data.settings.site.description
 
-    hr
-    = partial 'layouts/icons'
+    section.section
+      h2 Fabiks icon list
+      = partial 'layouts/icons'
 
-    hr
-    = partial 'layouts/buttons'
+    section.section
+      h2 Fabiks buttons style
+      .callout
+        = partial 'layouts/buttons'
+      = partial 'layouts/buttons'
+
+    section.section
+      h2 Fabiks navbar
+      = partial 'layouts/commons/navbar'
