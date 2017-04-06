@@ -1,0 +1,50 @@
+// 1. Global
+// ---------
+
+$global-width: rem-calc(1200);
+$body-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$global-flexbox: true;
+$font-weight-bolder: 900;
+$font-weight-normal: 400;
+$global-weight-normal: $font-weight-normal;
+
+
+// 4. Base Typography
+// ------------------
+
+$header-font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;;
+$header-font-weight: $font-weight-bolder;
+$header-font-style: normal;
+$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$header-color: inherit;
+$header-lineheight: 1.4;
+$header-margin-bottom: 0.5rem;
+$header-styles: (
+  small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  ),
+);
+$header-text-rendering: optimizeLegibility;
+$small-font-size: 80%;
+$header-small-font-color: $medium-gray;
+$paragraph-lineheight: 1.6;
+$paragraph-margin-bottom: 1rem;
+$paragraph-text-rendering: optimizeLegibility;
+
+// $anchor-color: $primary-color;
+// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+// $anchor-text-decoration: none;
+// $anchor-text-decoration-hover: none;
