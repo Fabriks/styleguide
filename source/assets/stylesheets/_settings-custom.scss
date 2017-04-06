@@ -14,7 +14,6 @@ $global-weight-normal: $font-weight-normal;
 
 $header-font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;;
 $header-font-weight: $font-weight-bolder;
-$header-font-style: bold;
 
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
@@ -40,7 +39,7 @@ $header-text-rendering: optimizeLegibility;
 
 $anchor-color: $blue;
 $anchor-color-hover: scale-color($anchor-color, $lightness: 30%);
-$anchor-text-decoration: underline;
+$anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 
 
@@ -66,6 +65,13 @@ $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
 $callout-link-tint: 30%;
+
+
+
+// 14. Card
+// --------
+
+$card-border: 0px solid $light-gray;
 
 
 

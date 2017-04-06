@@ -1,0 +1,27 @@
+---
+title: Search
+description: 'Write less code, solve more problems'
+---
+
+= partial 'layouts/commons/navbar'
+
+.row style="margin-top: 2rem;"
+  .small-12.columns
+    .callout
+      .text-center
+        h2 Brand title
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at, vel culpa nam dolor omnis optio porro beatae cumque debitis laboriosam consequatur. Debitis, eaque nulla. Veniam doloremque sunt cumque cum.
+
+      .row
+        .medium-3.columns
+          p Facets
+        .medium-9.columns
+          .row.small-up-1.medium-up-3
+            - data.products.each_with_index do |product|
+              .columns
+                = link_to '#' do
+                  .card.card-products
+                    = image_tag product.images[0].url
+                    .card-section
+                      h3.title = product.title
+                      p.description = product.legacySupplier

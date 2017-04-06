@@ -1,0 +1,19 @@
+.card-products {
+  img {
+    object-fit: cover;
+    max-height: 250px;
+    min-height: 250px;
+  }
+  &:hover {
+    .title,
+    .description {
+      color: $primary-color;
+    }
+  }
+  .title {
+    @extend h6;
+  }
+  .description {
+
+  }
+}
