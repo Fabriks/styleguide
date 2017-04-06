@@ -1,0 +1,27 @@
+h2 Fabiks buttons style
+.row
+  .columns
+    = link_to 'button', '#', class: 'button expanded'
+  .columns
+    = link_to 'button', '#', class: 'button expanded secondary'
+  .columns
+    = link_to 'button', '#', class: 'button expanded hollow'
+  .columns
+    = link_to 'button', '#', class: 'button expanded hollow secondary'
+.row
+  .columns
+    = link_to '#', class: 'button expanded' do
+      'button
+      i.icon.icon-medium.icon-chevron-white
+  .columns
+    = link_to '#', class: 'button expanded secondary' do
+      'button
+      i.icon.icon-medium.icon-chevron-white
+  .columns
+    = link_to '#', class: 'button expanded hollow' do
+      'button
+      i.icon.icon-medium.icon-chevron-blue
+  .columns
+    = link_to '#', class: 'button expanded hollow secondary' do
+      'button
+      i.icon.icon-medium.icon-chevron-blue

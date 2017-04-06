@@ -1,7 +1,7 @@
 site:
-  title: codeless
+  title: fabriks.next
   title_separator: •
-  description: 'Write less code, solve more problems'
+  description: 'Connect manufacurers and B2B clients'
   i18n: en
   geo:
     placename: 'Lille, Nord'

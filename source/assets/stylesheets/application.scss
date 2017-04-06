@@ -2,6 +2,9 @@
 
 @import 'colors';
 @import 'settings-custom';
-
 @import 'foundation-sites/scss/foundation';
+
+$global-width: rem-calc(1020);
 @include foundation-everything(true);
+
+@import 'atoms/icons';
