@@ -4,21 +4,31 @@ description: 'Write less code, solve more problems'
 ---
 
 .row
-  .small-12.columns
+  .medium-2.columns
+    section.section
+      ul
+        li Pages
+        li
+          = link_to 'search', 'search'
+  .medium-10.columns
     section.section
       h1 = data.settings.site.title
       p = data.settings.site.description
 
     section.section
-      h2 Fabiks icon list
-      = partial 'layouts/icons'
+      h2 Fabriks colors
+      = partial 'layouts/styleguide/colors'
 
     section.section
-      h2 Fabiks buttons style
+      h2 Fabriks icon list
+      = partial 'layouts/styleguide/icons'
+
+    section.section
+      h2 Fabriks buttons style
       .callout
-        = partial 'layouts/buttons'
-      = partial 'layouts/buttons'
+        = partial 'layouts/styleguide/buttons'
+      = partial 'layouts/styleguide/buttons'
 
     section.section
-      h2 Fabiks navbar
+      h2 Fabriks navbar
       = partial 'layouts/commons/navbar'

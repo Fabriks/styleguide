@@ -8,14 +8,16 @@ description: 'Write less code, solve more problems'
 .row style="margin-top: 2rem;"
   .small-12.columns
     .callout
-      .text-center
+      .callout.text-center.large
         h2 Brand title
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at, vel culpa nam dolor omnis optio porro beatae cumque debitis laboriosam consequatur. Debitis, eaque nulla. Veniam doloremque sunt cumque cum.
 
+    .callout
       .row
-        .medium-3.columns
-          p Facets
-        .medium-9.columns
+        .hide-for-small-only.medium-3.columns
+          = partial 'layouts/commons/facets'
+
+        .small-12.medium-9.columns
           .row.small-up-1.medium-up-3
             - data.products.each_with_index do |product|
               .columns

@@ -1,0 +1,8 @@
+.callout {
+  &.large {
+    padding: 1rem;
+    @include breakpoint(medium up) {
+      padding: 3rem;
+    }
+  }
+}

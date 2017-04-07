@@ -1,0 +1,7 @@
+.facets-list {
+  @extend .no-bullet;
+  [type="checkbox"],
+  [type="radio"] {
+    margin-bottom: 0;
+  }
+}

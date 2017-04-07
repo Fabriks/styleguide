@@ -1,11 +1,13 @@
+$z-index-navbar: 900;
+$z-index-darkroom: 500;
+
 .navbar {
   background-color: $black;
-  .brand-title {
-    span {
-      opacity: 0.4;
-    }
-  }
+  position: relative;
 
+
+  .brand-title {
+  }
 
   .navbar-search {
     padding: 1rem;
@@ -20,6 +22,12 @@
     opacity: 0.8;
     &:hover {
       opacity: 1;
+      span {
+        border-color: $medium-gray;
+      }
+    }
+    span {
+      border-bottom: 4px solid $dark-gray;
     }
   }
 }
