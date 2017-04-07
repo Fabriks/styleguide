@@ -9,7 +9,7 @@ html lang="#{data.settings.site.i18n}"
     = yield_content :head
 
   body class="#{page_classes}"
-
+    .navbar-darkroom
     == yield
 
     = javascript_include_tag 'application'
