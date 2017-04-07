@@ -1,16 +1,16 @@
 .navbar
   .row.align-middle.collapse.shrink
-    .navbar-categories.small-12.medium-5.columns
+    .navbar-categories.small-12.medium-7.large-3.columns
       .row
         .columns.shrink
           = link_to '#', class: 'brand-title' do
             |Fabriks
         .columns.shrink
-          = link_to '#' do
+          = link_to 'search' do
             span Manufacturers
         .columns.shrink
-          = link_to '#' do
+          = link_to 'search' do
             span Products
-    .small-12.medium-6.columns
+    .small-12.medium-5.large-7.columns
       form action="search" class="navbar-search"
         input type="search" placeholder="Search (e.g. “Vitra chair”)" style="margin-bottom:0" class="js-search-input search-input"

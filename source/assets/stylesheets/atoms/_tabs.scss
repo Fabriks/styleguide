@@ -1,0 +1,12 @@
+.tabs,
+.tabs-content {
+  border: 0;
+}
+
+.tabs {
+  border-bottom: 3px solid transparent;
+
+  .is-active {
+    color: $blue;
+  }
+}

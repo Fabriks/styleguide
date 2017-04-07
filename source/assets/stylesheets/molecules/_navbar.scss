@@ -34,7 +34,7 @@ $z-index-darkroom: 500;
   .search-input {
     border-color: transparent;
     &:focus {
-
+      border-color: $blue;
     }
   }
 }
@@ -47,4 +47,5 @@ $z-index-darkroom: 500;
   left: 0;
   z-index: $z-index-darkroom;
   background-color: $reveal-overlay-background;
+  display: none;
 }

@@ -11,9 +11,9 @@ description: 'Give me data please'
       - data.products.each_with_index do |product|
         - if product.legacyAlgoliaID === '66638280'
           .row
-            .columns
+            .small-12.medium-6.columns
               .row
-                .columns.small-2
+                .small-2.columns
                   = link_to product.images[1].url, target: '_blank' do
                     = image_tag product.images[1].url, itemprop: 'image'
                   = link_to product.images[2].url, target: '_blank' do
@@ -27,7 +27,7 @@ description: 'Give me data please'
                   span class="brand" itemprop="brand" = product.legacySupplier
                 hr
                 = link_to '#', class: 'button large expanded', 'data-open' => 'js-contact-form' do
-                  'Contact
+                  'Contact supplier
                   i.icon.icon-medium.icon-external-link-white
                 hr
 
@@ -40,6 +40,8 @@ description: 'Give me data please'
     ul.tabs
       li.tabs-title.is-active
         a href="#panel1d" aria-selected="true" Similar products
+      li.tabs-title
+        a href="#panel1d" aria-selected="true" Same manufacturer
 
     .tabs-content
       .tabs-panel.is-active style="display: block;"
