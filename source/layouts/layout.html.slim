@@ -9,8 +9,20 @@ html lang="#{data.settings.site.i18n}"
     = yield_content :head
 
   body class="#{page_classes}"
-    .navbar-darkroom
+    .navbar-darkroom.js-darkroom style="display: none;"
     == yield
 
     = javascript_include_tag 'application'
     = yield_content :javascripts
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    javascript:
+      $(document).ready(function() {
+        $('.js-search-input').focus(function(event) {
+          $('.js-darkroom').show();
+        });
+        $('.js-darkroom').click(function(event) {
+          $('.js-darkroom').hide();
+        });
+      });

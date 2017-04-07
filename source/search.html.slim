@@ -1,11 +1,11 @@
 ---
 title: Search
-description: 'Write less code, solve more problems'
+description: 'Give me data please'
 ---
 
 = partial 'layouts/commons/navbar'
 
-.row style="margin-top: 2rem;"
+.row
   .small-12.columns
     .callout
       .callout.text-center.large
@@ -21,7 +21,7 @@ description: 'Write less code, solve more problems'
           .row.small-up-1.medium-up-3
             - data.products.each_with_index do |product|
               .columns
-                = link_to '#' do
+                = link_to 'product' do
                   .card.card-products
                     = image_tag product.images[0].url
                     .card-section

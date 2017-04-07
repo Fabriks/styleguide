@@ -6,10 +6,13 @@ description: 'Write less code, solve more problems'
 .row
   .medium-2.columns
     section.section
-      ul
-        li Pages
+      ul.no-bullet
+        li
+          strong Pages
         li
           = link_to 'search', 'search'
+        li
+          = link_to 'product', 'product'
   .medium-10.columns
     section.section
       h1 = data.settings.site.title
@@ -25,9 +28,11 @@ description: 'Write less code, solve more problems'
 
     section.section
       h2 Fabriks buttons style
-      .callout
-        = partial 'layouts/styleguide/buttons'
       = partial 'layouts/styleguide/buttons'
+      .callout style="padding-top: 2rem;"
+        = partial 'layouts/styleguide/buttons'
+      .callout.dark style="padding-top: 2rem;"
+        = partial 'layouts/styleguide/buttons'
 
     section.section
       h2 Fabriks navbar

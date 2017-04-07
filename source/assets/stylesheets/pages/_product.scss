@@ -1,0 +1,16 @@
+.product {
+
+}
+
+.product-title {
+  @extend h5;
+  span {
+    display: block;
+  }
+  .brand {
+    font-family: $body-font-family;
+    @extend p;
+    font-size: rem-calc(14);
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,51 @@
+---
+title: Search
+description: 'Give me data please'
+---
+
+= partial 'layouts/commons/navbar'
+
+.row
+  .small-12.columns
+    .callout.large itemscope="" itemtype="http://schema.org/Product"
+      - data.products.each_with_index do |product|
+        - if product.legacyAlgoliaID === '66638280'
+          .row
+            .columns
+              .row
+                .columns.small-2
+                  = link_to product.images[1].url, target: '_blank' do
+                    = image_tag product.images[1].url, itemprop: 'image'
+                  = link_to product.images[2].url, target: '_blank' do
+                    = image_tag product.images[2].url, itemprop: 'image'
+                .columns
+                  = link_to product.images[0].url, target: '_blank' do
+                    = image_tag product.images[0].url, itemprop: 'image'
+            .columns
+                h1.product-title
+                  span class="title" itemprop="name" = product.title
+                  span class="brand" itemprop="brand" = product.legacySupplier
+                hr
+                = link_to '#', class: 'button large expanded' do
+                  'Contact
+                  i.icon.icon-medium.icon-external-link-white
+                hr
+
+                p
+                  strong Details
+                  br
+                  = product.description
+                p = product.materials[0]
+
+    ul.tabs
+      li.tabs-title.is-active
+        a href="#panel1d" aria-selected="true" Similar products
+
+    .tabs-content
+      .tabs-panel is-active" id="panel1d">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+    p Discover More Products
+
+    'Jimmy Choo items by category | All Jimmy Choo items | All Men's Sneakers
