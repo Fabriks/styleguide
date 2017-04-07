@@ -1,6 +1,7 @@
 ::Sass.load_paths << File.join(root, "node_modules")
 
 require 'slim'
+Slim::Engine.default_options[:pretty] = true # Avoid HTML minification for Karl
 
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 activate :livereload
@@ -37,7 +38,6 @@ configure :build do
   activate :asset_hash
   activate :gzip
   activate :minify_css
-  activate :minify_html, remove_input_attributes: false
   activate :minify_javascript
 
   activate :sitemap, hostname: data.settings.site.url

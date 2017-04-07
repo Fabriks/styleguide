@@ -31,6 +31,12 @@ $z-index-darkroom: 500;
       border-bottom: 4px solid $dark-gray;
     }
   }
+  .search-input {
+    border-color: transparent;
+    &:focus {
+
+    }
+  }
 }
 
 .navbar-darkroom {
@@ -40,5 +46,5 @@ $z-index-darkroom: 500;
   bottom: 0;
   left: 0;
   z-index: $z-index-darkroom;
-  background-color: rgba($black, 0.4);
+  background-color: $reveal-overlay-background;
 }

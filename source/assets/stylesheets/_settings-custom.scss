@@ -78,7 +78,56 @@ $card-border: 0px solid $light-gray;
 // 19. Forms
 // ---------
 
-$input-border: 3px solid transparent;
+$input-border: 3px solid $medium-gray;
 $input-border-focus: 3px solid $blue;
 $input-shadow: none;
 $input-shadow-focus: none;
+
+
+
+// 29. Reveal
+// ----------
+
+$reveal-border: 1px solid $white;
+$reveal-zindex: 1005;
+$reveal-overlay-background: rgba($black, 0.4);
+
+
+
+// 33. Tabs
+// --------
+
+$tab-margin: 0;
+$tab-background: $white;
+$tab-color: $blue;
+$tab-background-active: $light-gray;
+$tab-active-color: $blue;
+$tab-item-font-size: rem-calc(14);
+$tab-item-background-hover: $white;
+$tab-item-padding: 1.25rem 1.5rem;
+$tab-expand-max: 6;
+$tab-content-background: $white;
+$tab-content-border: $light-gray;
+$tab-content-color: $body-font-color;
+$tab-content-padding: 1rem;
+
+
+
+// 666. Motion-ui
+// --------
+
+/// Default speed that transitions and animations play at, along with values for modifier classes to change the speed.
+/// @type Map
+$motion-ui-speeds: (
+  default: 300ms,
+  slow: 750ms,
+  fast: 250ms,
+);
+
+/// Default delay to add before motion, along with values for modifier classes to change the delay.
+/// @type Map
+$motion-ui-delays: (
+  default: 0,
+  short: 300ms,
+  long: 700ms,
+);

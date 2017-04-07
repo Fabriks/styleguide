@@ -26,7 +26,7 @@ description: 'Give me data please'
                   span class="title" itemprop="name" = product.title
                   span class="brand" itemprop="brand" = product.legacySupplier
                 hr
-                = link_to '#', class: 'button large expanded' do
+                = link_to '#', class: 'button large expanded', 'data-open' => 'js-contact-form' do
                   'Contact
                   i.icon.icon-medium.icon-external-link-white
                 hr
@@ -53,7 +53,4 @@ description: 'Give me data please'
                     h3.title = product.title
                     p.description = product.legacySupplier
 
-
-    p Discover More Products
-
-    'Jimmy Choo items by category | All Jimmy Choo items | All Men's Sneakers
+= partial 'layouts/contact-modal'
