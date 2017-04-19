@@ -5,25 +5,36 @@ description: 'Give me data please'
 
 = partial 'layouts/commons/navbar'
 
-.row
-  .small-12.columns
-    .callout
-      .callout.text-center.large
-        h2 Brand title
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia at, vel culpa nam dolor omnis optio porro beatae cumque debitis laboriosam consequatur. Debitis, eaque nulla. Veniam doloremque sunt cumque cum.
+.callout style="margin-top: -2rem;"
+  .row.expanded
+    .medium-3.large-2.columns
+      = partial 'layouts/commons/product-filters'
+      javascript:
+        //More (Expand) or Less (Collapse)
+        $('.categories-menu.menu.nested').each(function(){
+          var filterAmount = $(this).find('li').length;
+          if( filterAmount > 5){
+            $('li', this).eq(4).nextAll().hide().addClass('toggleable');
+            $(this).append('<li class="more">More</li>');
+          }
+        });
 
-    .callout
-      .row
-        .hide-for-small-only.medium-3.columns
-          = partial 'layouts/commons/facets'
+        $('.categories-menu.menu.nested').on('click','.more', function(){
+          if( $(this).hasClass('less') ){
+            $(this).text('More').removeClass('less');
+          }else{
+            $(this).text('Less').addClass('less');
+          }
+          $(this).siblings('li.toggleable').slideToggle();
+        });
 
-        .small-12.medium-9.columns
-          .row.small-up-1.medium-up-3
-            - data.products.each_with_index do |product|
-              .columns
-                = link_to 'product' do
-                  .card.card-products
-                    = image_tag product.images[0].url
-                    .card-section
-                      h3.title = product.title
-                      p.description = product.legacySupplier
+    .small-12.medium-9.large-10.columns
+      .row.expanded.small-up-2.medium-up-3.large-up-4.xlarge-up-5
+        - data.products.each_with_index do |product|
+          .columns
+            = link_to 'product' do
+              .card.card-products
+                = image_tag product.images[0].url
+                .card-section
+                  h3.title = product.title
+                  p.description = product.legacySupplier

@@ -3,7 +3,7 @@ title: Styleguide
 description: 'Write less code, solve more problems'
 ---
 
-.row
+.row.expanded
   .medium-2.columns
     section.section
       ul.no-bullet
@@ -37,3 +37,26 @@ description: 'Write less code, solve more problems'
     section.section
       h2 Fabriks navbar
       = partial 'layouts/commons/navbar'
+
+    section.section
+      h2 Fabriks product filters
+      .callout
+        = partial 'layouts/commons/product-filters'
+      javascript:
+        //More (Expand) or Less (Collapse)
+        $('.categories-menu.menu.nested').each(function(){
+          var filterAmount = $(this).find('li').length;
+          if( filterAmount > 5){
+            $('li', this).eq(4).nextAll().hide().addClass('toggleable');
+            $(this).append('<li class="more">More</li>');
+          }
+        });
+
+        $('.categories-menu.menu.nested').on('click','.more', function(){
+          if( $(this).hasClass('less') ){
+            $(this).text('More').removeClass('less');
+          }else{
+            $(this).text('Less').addClass('less');
+          }
+          $(this).siblings('li.toggleable').slideToggle();
+        });

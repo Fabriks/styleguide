@@ -1,0 +1,49 @@
+.product-filters {
+
+  label {
+    color: $dark-gray;
+  }
+
+  .menu.nested {
+    margin-left: 0rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .menu > li > a {
+    padding-left: 0;
+    color: darken($dark-gray, 25%);
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .is-accordion-submenu-parent > a::after {
+    border-color: $medium-gray transparent transparent;
+  }
+
+  .clear-all {
+    font-size: 0.9rem;
+    color: $medium-gray;
+  }
+
+  .more {
+    color: $primary-color;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+}
+
+.product-filters-header {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.product-filters-tab {
+  border-top: 1px solid $light-gray;
+}
+
+
+.mobile-product-filters {
+  border-bottom: 1px solid $light-gray;
+}
