@@ -56,12 +56,13 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: 30%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 
+$subheader-color: scale-color($dark-gray, $lightness: 30%);
 
 
 // 11. Button
 // ----------
 
-$button-background: $blue;
+$button-background: $purple;
 $button-background-hover: scale-color($button-background, $lightness: 30%);
 $button-background-hover-lightness: 30%;
 $button-hollow-hover-lightness: 30%;

@@ -1,0 +1,77 @@
+---
+title: Homepage
+description: 'Give me data please'
+---
+
+= partial 'layouts/commons/navbar'
+
+.hero-banner
+  h1.title
+    'Find unique furniture
+    br
+    'all around the world
+
+.row.collapse.callout-homepage
+  .columns
+    .callout
+      .row.collapse
+        .columns
+          h2 Products
+          = link_to 'Find now', 'search', class: 'button'
+        .columns
+          = image_tag 'products.jpg', alt: 'Give me data please'
+  .columns
+    .callout
+      .row.collapse
+        .columns
+          h2 Manufacturers
+          = link_to 'Find now', 'search', class: 'button'
+        .columns
+          = image_tag 'manufacturers.jpg', alt: 'Give me data please'
+
+section.section
+  .row
+    .columns
+      h3.subheader.text-center Edits to inspire
+      .row.small-up-1.medium-up-3
+        - data.products[56..58].each do |product|
+          .columns
+            = link_to 'product' do
+              .card.card-products
+                = image_tag product.images[0].url
+                .card-section
+                  h3.title = product.title
+                  p.description = product.legacySupplier
+
+section.section
+  .row
+    .columns
+      h3.subheader.text-center Browse & Shop
+      .row.small-up-1.medium-up-3
+        - data.products[16..18].each do |product|
+          .columns
+            = link_to 'product' do
+              .card.card-products
+                = image_tag product.images[0].url
+                .card-section
+                  h3.title = product.title
+                  p.description = product.legacySupplier
+
+section.section
+  .row.collapse
+    .columns
+      .callout
+        .row.collapse
+          .columns
+            h2 Products
+            = link_to 'Find now', 'search', class: 'button'
+          .columns
+            = image_tag 'products.jpg', alt: 'Give me data please'
+    .columns
+      .callout
+        .row.collapse
+          .columns
+            h2 Manufacturers
+            = link_to 'Find now', 'search', class: 'button'
+          .columns
+            = image_tag 'manufacturers.jpg', alt: 'Give me data please'

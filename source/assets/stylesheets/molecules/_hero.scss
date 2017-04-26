@@ -1,0 +1,27 @@
+.hero-banner {
+  background-image: image-url('homepage.jpg');
+  background-size: cover;
+  margin-top: -$navbar-margin-bottom;
+  padding: 10rem 0;
+  background-position: bottom center;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($black, 0.2);
+    content: '';
+    display: block;
+  }
+
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -2px;
+    color: $white;
+    position: relative;
+    z-index: 9;
+  }
+}

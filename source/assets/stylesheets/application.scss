@@ -14,8 +14,9 @@ $global-width: rem-calc(1020);
 @import 'atoms/tabs';
 
 @import 'molecules/cards';
-@import 'molecules/product-filters';
 @import 'molecules/navbar';
+@import 'molecules/hero';
+@import 'molecules/product-filters';
 @import 'molecules/sections';
 
 @import 'pages/product';
