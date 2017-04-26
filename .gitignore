@@ -3,6 +3,7 @@
 
 # Ignore the build directory
 /dist
+/build
 
 # Ignore Sass' cache
 /.sass-cache
