@@ -1,0 +1,16 @@
+@mixin truncate($width: 100%) {
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin link-hover($color, $hover, $focus){
+  color: $color;
+  &:hover {
+    color: $hover;
+  }
+  &:focus {
+    color: $focus;
+  }
+}

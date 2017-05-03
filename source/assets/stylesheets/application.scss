@@ -12,9 +12,11 @@ $global-width: rem-calc(1020);
 @import 'atoms/callout';
 @import 'atoms/icons';
 @import 'atoms/tabs';
+@import 'atoms/typography';
 
 @import 'molecules/cards';
 @import 'molecules/navbar';
+@import 'molecules/footer';
 @import 'molecules/hero';
 @import 'molecules/product-filters';
 @import 'molecules/sections';

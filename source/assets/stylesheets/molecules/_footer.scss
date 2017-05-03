@@ -1,0 +1,15 @@
+.footer {
+  background-color: rgba($black, 0.95);
+  color: $white;
+  padding: 4rem;
+  font-size: rem-calc(14);
+  a {
+    @include link-hover($medium-gray, $white, $primary-color);
+  }
+  &-separator {
+    margin-top: 0.5rem;
+  }
+  &-title {
+    font-weight: bold;
+  }
+}

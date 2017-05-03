@@ -11,6 +11,9 @@ html lang="#{data.settings.site.i18n}"
   body class="#{page_classes}"
     .navbar-darkroom.js-darkroom
     == yield
+    = partial 'layouts/commons/footer'
+
+
 
     = javascript_include_tag 'application'
     = yield_content :javascripts

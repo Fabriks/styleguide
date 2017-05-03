@@ -42,8 +42,10 @@ description: 'Write less code, solve more problems'
 
     section.section
       h2 Fabriks product filters
-      .callout
-        = partial 'layouts/commons/product-filters'
+      .row
+        .medium-4.columns
+          .callout
+            = partial 'layouts/commons/product-filters'
       javascript:
         //More (Expand) or Less (Collapse)
         $('.categories-menu.menu.nested').each(function(){

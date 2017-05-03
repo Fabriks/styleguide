@@ -1,0 +1,55 @@
+section.section.section-light.small
+  .row
+    .small-12.medium-6.columns
+      h5 Our mission
+      p Connect talents and simplify products sharing between humans.
+    .small-12.medium-6.columns
+      form action="#" method="post"
+        label Stay Updated with our product
+        .input-group
+          input.input-group-field autocapitalize="none" autocorrect="off" name="EMAIL" placeholder="gustave@eiffel.fr" required="" type="email"
+          .input-group-button
+            input type="submit" class="button" value="Submit"
+
+
+footer.footer
+  .row
+    .small-12.medium-4.columns
+      p.footer-title Fabriks
+      'Find furniture manufacturers
+    .small-12.medium-2.columns
+      p.footer-title Products
+      ul.no-bullet
+        li
+          = link_to 'Table', 'search'
+        li
+          = link_to 'Couch', 'search'
+        li
+          = link_to 'Lights', 'search'
+        li.footer-separator
+          = link_to 'View all', 'search'
+    .small-12.medium-2.columns
+      p.footer-title Manufacturers
+      ul.no-bullet
+        li
+          = link_to 'Janus Et Cie', 'search'
+        li
+          = link_to 'Wittmann', 'search'
+        li
+          = link_to 'Arper', 'search'
+        li.footer-separator
+          = link_to 'View all', 'search'
+    .small-12.medium-2.columns
+      p.footer-title Help / Info
+      ul.no-bullet
+        li
+          = link_to 'Help center', 'search'
+        li = link_to 'Contact', '#'
+        li = link_to 'Terms & Conditions', '#'
+        li = link_to 'Privacy & Cookie Policy', '#'
+
+    .small-12.medium-2.columns
+      p.footer-title Sitemap
+      ul.no-bullet
+        li = link_to 'All products', '#'
+
