@@ -11,23 +11,7 @@ description: 'Give me data please'
     br
     'all around the world
 
-.row.collapse.callout-homepage
-  .columns
-    .callout
-      .row.collapse
-        .columns
-          h2 Products
-          = link_to 'Find now', 'search', class: 'button'
-        .columns
-          = image_tag 'products.jpg', alt: 'Give me data please'
-  .columns
-    .callout
-      .row.collapse
-        .columns
-          h2 Manufacturers
-          = link_to 'Find now', 'search', class: 'button'
-        .columns
-          = image_tag 'manufacturers.jpg', alt: 'Give me data please'
+= partial 'layouts/callout-homepage'
 
 section.section
   .row
@@ -61,21 +45,4 @@ section.section
   .columns
     = partial 'layouts/whois'
 
-section.section
-  .row.collapse
-    .columns
-      .callout
-        .row.collapse
-          .columns
-            h2 Products
-            = link_to 'Find now', 'search', class: 'button'
-          .columns
-            = image_tag 'products.jpg', alt: 'Give me data please'
-    .columns
-      .callout
-        .row.collapse
-          .columns
-            h2 Manufacturers
-            = link_to 'Find now', 'search', class: 'button'
-          .columns
-            = image_tag 'manufacturers.jpg', alt: 'Give me data please'
+= partial 'layouts/callout-homepage'

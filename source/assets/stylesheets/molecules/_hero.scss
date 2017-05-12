@@ -1,4 +1,10 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .hero-banner {
+  animation: fadein 1000ms ease-in-out;
   background-image: image-url('homepage.jpg');
   background-size: cover;
   margin-top: -$navbar-margin-bottom;
