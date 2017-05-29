@@ -1,3 +1,3 @@
-# Fabricks.next Styleguide
+# Fabriks.next Styleguide
 
 Thanks to [codeless](https://github.com/flexbox/codeless)
