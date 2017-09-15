@@ -25,6 +25,23 @@ description: 'Write less code, solve more problems'
       = partial 'layouts/styleguide/colors'
 
     section.section
+      h2 Fabriks logo
+      p
+        'Download the source
+        => link_to 'sketch files', image_path('logos/fabriks-logo.sketch')
+        'or
+        = link_to 'png files', image_path('logos/fabriks-logo.zip')
+      .row
+        .columns
+          = partial 'layouts/styleguide/logo'
+        .columns
+          .callout style="padding: 0;"
+            = partial 'layouts/styleguide/logo'
+        .columns
+          .callout.dark style="padding: 0;"
+            = partial 'layouts/styleguide/logo'
+
+    section.section
       h2 Fabriks icon list
       = partial 'layouts/styleguide/icons'
 
